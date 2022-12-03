@@ -1,3 +1,15 @@
+# Reasoning for the tech stack used
+
+I have decided to use React.JS to build this app, more precisely create-react-app, because it has its own setup and works with TypeScript (more safety added by using types). Using React also allows for very good performance of the app (check performance.png), meeting the crieteria of reusability and scalability.
+For styling, I have opted for styled-components so that we can keep the style scoped at component level, without risk of having class names colliding, if the application scales up.
+
+**Please run**:
+
+- npm start (to start the application)
+- npm test (to run the unit tests)
+
+## The exercise
+
 Which? Front-end Exercise
 This repository provides information and a project boilerplate for completing the test exercise sent to candidates applying for front-end roles at Which?.
 

@@ -18,7 +18,6 @@ describe("Main", () => {
 
   it("starts with no highlighted buttons", () => {
     render(<Main />);
-    console.log(" getButtons:>> ", getButtons());
     getButtons().forEach((button) => {
       expect(button).not.toHaveClass("with-border");
       expect(button).not.toHaveClass("highlight");

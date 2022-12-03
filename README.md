@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+Which? Front-end Exercise
+This repository provides information and a project boilerplate for completing the test exercise sent to candidates applying for front-end roles at Which?.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Getting up and running
+This repository provides a starting point for the test but if you'd rather start from scratch with your own setup that's fine too, as long as you complete the exercise.
 
-## Available Scripts
+We have provided a Webpack and Babel based development environment which can compile and bundle your source code. It also includes a server which will automatically reload your code changes in the browser.
 
-In the project directory, you can run:
+Which? primarily uses React and TypeScript in our front-end projects but you can use vanilla JavaScript or other tools if you prefer. We have not provided any tooling to work with anything beyond vanilla JavaScript.
 
-### `npm start`
+We have provided Jest to test your code which is a fully featured testing framework. It includes a test runner, assertions, and mock functions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Requirements
+To get started you'll need to make sure you have the following software tools installed:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Git
+Node.js (version 12 or higher is required)
+npm (this should be installed along with Node.js)
+Installation and setup
+Clone this Git repository and change to the new directory that has been created:
 
-### `npm test`
+git clone https://github.com/whichdigital/fe-techtest.git --depth 1
+cd fe-techtest
+Install all of the project dependencies using npm:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+Once installed you can run the Webpack development server:
 
-### `npm run build`
+npm start
+Now open http://localhost:8080/ in your browser and you should see a basic HTML page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you open the developer console in the browser, you should see a welcome message which confirms everything is loading and running correctly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To stop the server when no longer needed, you can press ctrl + c in the terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+And to run your tests use the following command:
 
-### `npm run eject`
+npm test
+The exercise
+Goal
+We would like you to create a client-side web application to help a child understand multiplication. Your application will display a grid of numbers. When a child selects a number, the multiples of that chosen number should be highlighted.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Functional requirements
+The application must display numbers from 1 to 144.
+When a number is clicked, all numbers which are a multiple of the chosen number must be highlighted.
+When a subsequent number is clicked, all numbers which are a multiple of the new number must be highlighted. Any numbers which are not multiples of the new number should no longer be highlighted.
+Visual requirements
+Each number must be within a large clickable box.
+Each number must be horizontally and vertically centered within their clickable box.
+The boxes must be laid out evenly within a grid.
+On mobile and small screen devices, one number must be displayed in each grid row.
+On tablet and middle sized devices, two numbers must be displayed in each grid row.
+On desktop and large screen devices, three numbers must be displayed in each grid row.
+The grid should have a maximum width so that the clickable boxes do not get too large.
+The grid should be horizontally centered on the screen.
+Other
+We'd appreciate it if you could update this readme with additional information about your solution. Things to mention might include the tools used, alternative solutions considered, improvements you'd like to make, or things you'd do differently if you had more time.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Criteria for assessment
+Your completed test exercise will be marked according to a score sheet. We will focus on the following areas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+That your solution meets the requirements.
+How usable your application is when using assistive technology.
+Your approach to testing the application.
+The use of responsive design.
+Clear project structure and conventions.
+How readable and understandable your code is.
+The performance of your completed application.
+You won’t be assessed on the appearance of the app beyond the visual requirements and accessibility criteria.

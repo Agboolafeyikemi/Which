@@ -3,19 +3,16 @@ import { media, colours } from "../../utils";
 
 export const NumberBoxWrapper = styled.button`
   ${media.desktop} {
-    height: 150px;
     min-width: 200px;
   }
   ${media.tablet} {
-    height: 150px;
     min-width: 285px;
   }
   ${media.mobile} {
-    height: 150px;
     width: 100%;
     min-width: 240px;
   }
-
+  height: 150px;
   cursor: pointer;
   text-align: center;
   border-radius: 5px;

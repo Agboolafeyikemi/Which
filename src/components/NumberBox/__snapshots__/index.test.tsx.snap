@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberBox should render successfully with props 1`] = `
+<body>
+  <div>
+    <button
+      class="sc-bcXHqe iQNExJ"
+      value="1"
+    >
+      1
+    </button>
+  </div>
+</body>
+`;

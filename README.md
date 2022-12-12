@@ -8,6 +8,7 @@
 - I have decided to use React.JS to build this app, more precisely create-react-app, because it has its own setup and works with TypeScript (more safety added by using types).
 - Using React also allows for very good performance of the app meeting the crieteria of reusability and scalability.
 - For styling, I have opted for styled-components so that we can keep the style scoped at component level, without risk of having class names colliding, if the application scales up.
+- I would have love to add animations and test for visual if i have more time.
 
 **Please run**:
 
